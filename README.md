@@ -76,10 +76,25 @@
 
 ## 关于我们
 
-JSREI是一个专注于Web逆向工程研究的组织。欢迎加入我们的交流群：
+JSREI是一个专注于Web逆向工程研究的组织。欢迎加入社区交流群：
 
-- [微信交流群](https://github.com/JSREI)
-- [Telegram交流群](https://t.me/jsreijsrei)
+### 微信交流群
+
+扫码加入逆向技术微信交流群：
+
+<img src="https://cdn.jsdelivr.net/gh/JSREI/.github/profile/README.assets/image-20241016230653669.png" width="200">
+
+### 个人微信
+
+如群二维码过期，可以加我个人微信，发送【逆向群】拉你进群：
+
+<img src="https://cdn.jsdelivr.net/gh/JSREI/.github/profile/README.assets/image-20231030132026541-7614065.png" width="200">
+
+### Telegram交流群
+
+[点此](https://t.me/jsreijsrei)或扫码加入TG交流群：
+
+<img src="https://cdn.jsdelivr.net/gh/JSREI/.github/profile/README.assets/image-20241016231143315.png" width="200">
 
 ## 许可证
 
