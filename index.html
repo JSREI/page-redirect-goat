@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面重定向靶场 - JSREI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="https://github.com/JSREI/page-redirect-goat" target="_blank">
+                    <h1>页面重定向靶场</h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#test-cases" class="nav-link">测试用例</a>
+                <a href="#about" class="nav-link">关于我们</a>
+            </div>
+            <div class="github-badge">
+                <a href="https://github.com/JSREI/page-redirect-goat" target="_blank">
+                    <img src="https://img.shields.io/github/stars/JSREI/page-redirect-goat?style=social" alt="GitHub stars">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 说明横幅 -->
+    <div class="banner">
+        <div class="container">
+            <p>本靶场用于测试和练习页面重定向代码的逆向定位能力，帮助开发者验证工具是否能准确定位重定向代码位置</p>
+        </div>
+    </div>
+
+    <!-- 第一屏：测试用例列表 -->
+    <section id="test-cases" class="screen">
+        <div class="container">
+            <h2>测试用例列表</h2>
+            <p class="description">这是一个用于逆向练习的页面重定向靶场，点击下方链接开始测试</p>
+            
+            <div class="test-list">
+                <div class="test-card">
+                    <h3>DevTool自动重定向</h3>
+                    <p>打开开发者工具时自动重定向到其他页面</p>
+                    <a href="test_case/by-location.html" class="test-link" target="_blank">开始测试</a>
+                </div>
+                
+                <div class="test-card">
+                    <h3>表单提交重定向</h3>
+                    <p>提交表单时的重定向测试</p>
+                    <a href="test_case/submit-form.html" class="test-link" target="_blank">开始测试</a>
+                </div>
+                
+                <div class="test-card">
+                    <h3>JS表单提交重定向</h3>
+                    <p>使用JavaScript提交表单时的重定向测试</p>
+                    <a href="test_case/submit-form-by-js.html" class="test-link" target="_blank">开始测试</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 第二屏：关于我们 -->
+    <section id="about" class="screen">
+        <div class="container">
+            <h2>关于我们</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>逆向技术交流群</h3>
+                    <p>我们是一个专注于Web逆向技术研究的组织，欢迎加入我们的交流群。</p>
+                </div>
+                
+                <div class="qr-codes">
+                    <div class="qr-card">
+                        <h4>微信交流群</h4>
+                        <img src="https://cdn.jsdelivr.net/gh/JSREI/.github/profile/README.assets/image-20241016230653669.png" alt="微信交流群二维码">
+                    </div>
+                    
+                    <div class="qr-card">
+                        <h4>个人微信</h4>
+                        <p>如群二维码过期，可以加我个人微信，发送【逆向群】拉你进群</p>
+                        <img src="https://cdn.jsdelivr.net/gh/JSREI/.github/profile/README.assets/image-20231030132026541-7614065.png" alt="个人微信二维码">
+                    </div>
+                    
+                    <div class="qr-card">
+                        <h4>Telegram交流群</h4>
+                        <p><a href="https://t.me/jsreijsrei" target="_blank">点此</a>或扫码加入TG交流群</p>
+                        <img src="https://cdn.jsdelivr.net/gh/JSREI/.github/profile/README.assets/image-20241016231143315.png" alt="Telegram交流群二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://github.com/JSREI" target="_blank">JSREI组织</a>
+                    <a href="https://github.com/JSREI/page-redirect-goat" target="_blank">项目仓库</a>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 JSREI. 保留所有权利。
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html> 
