@@ -35,12 +35,20 @@ jobs:
           # 如果需要构建步骤，可以在这里添加
           # 例如：npm install && npm run build
           echo "静态网站无需构建，直接部署"
+      
+      # 显式添加upload-artifact作为依赖项    
+      - name: Setup Actions
+        uses: actions/upload-artifact@v3
+        with:
+          name: dummy-artifact
+          path: LICENSE
+          retention-days: 1
           
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # 使用最新版本的upload-pages-artifact action
+        uses: actions/upload-pages-artifact@v1  # 降级到v1版本，避免依赖问题
         with:
           path: '.'  # 上传整个仓库作为部署内容
           
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3  # 使用最新版本的deploy-pages action 
+        uses: actions/deploy-pages@v2  # 降级到v2版本，避免依赖问题 
