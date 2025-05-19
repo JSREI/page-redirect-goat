@@ -1,0 +1,46 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 监听主分支的推送事件
+  workflow_dispatch:  # 允许手动触发
+
+# 设置权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 确保同一时间只运行一个部署任务
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4  # 使用最新版本的checkout action
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4  # 使用最新版本的configure-pages action
+        
+      - name: Build
+        run: |
+          # 如果需要构建步骤，可以在这里添加
+          # 例如：npm install && npm run build
+          echo "静态网站无需构建，直接部署"
+          
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2  # 使用最新版本的upload-pages-artifact action
+        with:
+          path: '.'  # 上传整个仓库作为部署内容
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3  # 使用最新版本的deploy-pages action 
